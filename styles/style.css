@@ -1,0 +1,230 @@
+:root{
+
+    /* Font */
+    --pattern-font:'Josefin Sans', sans-serif;
+    
+
+    /* Primary Colors */
+
+    --desaturated-red: hsl(0, 36%, 70%);
+    --soft-red:hsl(0, 93%, 68%);
+
+    /* Neutral */
+    --dark-grayish-red: hsl(0, 6%, 24%);
+
+    /* Gradients */
+    /* - Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+    - Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+    font-family: var(--pattern-font);
+    overflow-x: hidden;
+   
+    
+}
+
+
+#were{
+    color: var(--desaturated-red);
+    font-weight: 300;
+}
+
+main h1{
+    font-size: 58px;
+    letter-spacing: 14px;
+    width: 300px;
+    text-transform: uppercase;
+    color: var(--dark-grayish-red);
+    line-height: 70px;
+
+    margin-bottom: 15px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: auto;
+    
+
+    
+}
+
+header img{
+    margin-bottom: 40px;
+}
+
+
+
+#p-main{
+    color: var(--desaturated-red);
+    
+    line-height: 28px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+.txt-container{
+    display: flex;
+    flex-direction: column;
+    margin: 80px 180px 80px 220px;
+    width: 760px;
+    padding-left: 40px;
+}
+
+.hero-desktop{
+    display: flex;
+    width: 100%;
+    height: auto;
+    
+    
+}
+
+.danger-icon{
+    position: relative;
+    right: 79px;
+    top: 4px;
+    opacity: -1;
+}
+
+.span-required{
+    display: none;
+    color:  #e63636;
+    margin-top: 10px;
+
+    
+}
+
+input{
+    width: 430px;
+    border: 0.5px solid #E8CCCC;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 9999px;
+}
+
+input::placeholder{
+    padding: 10px;
+    color: #EFD4CB;
+    font-family: 'Poppins', sans-serif;
+}
+
+button{
+    padding: 12px;
+    border-radius: 9999px;
+    border: none;
+    background: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    width: 90px;
+    box-shadow: 3px 1px 7px 0px #58585875;
+    cursor: pointer;
+    
+
+    position: relative;
+    right: 59px;
+    top: 4px;
+
+
+}
+
+.mobile-image{
+    display: none;
+}
+
+button:hover{
+    background: linear-gradient(135deg,hsl(0, 75%, 89%),hsl(0, 74%, 85%));
+    
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    }
+
+    form{
+        width: 700px;
+    }
+
+
+@media screen and (max-width:1100px) {
+    
+    .hero-desktop{
+        display: flex;
+        width: 100%;
+        height: auto;
+        
+        
+        
+        
+    }
+
+    .txt-container{
+
+        width: 300px;
+        margin: auto;
+        margin-left: 150px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+    .wrapper{
+        width: 100%;
+        
+        gap: 130px;
+    }
+
+    header img{
+        margin-bottom: 20px;
+    }
+
+    input{
+        width: 190px;
+    }
+}
+
+
+@media screen and (max-width:868px){
+
+
+       
+
+    .wrapper{
+        
+        width: 100%;
+        padding-top: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    input{
+        width: 240px;
+    }
+    .hidden{
+        display: none;
+    }
+
+    .mobile-image{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    #hero-mbl{
+        width: 150%;
+    }
+    .txt-container{
+        margin: 0;
+        margin-right: 0;
+        padding: 20px;
+    }
+}

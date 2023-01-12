@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="wrapper">
+    <div class="txt-container">
+      <header>
+        <a href="#"><img src="images/logo.svg" id="logo-img" alt=""></a>
+      </header>
+      <div class="mobile-image hidden"><img src="images/hero-mobile.jpg" id="hero-mbl" alt=""></div>
+      <h1><span id="were">We're</span> coming soon</h1>
+      <p id="p-main">
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+      <form action="" id="form">
+        <div class="">
+        <input type="text" placeholder="Email Adress" id="principal-input" class="inputs-required" oninput="validateEmail()">
+        <button type="submit"><img src="images/icon-arrow.svg" alt=""><img src="images/icon-error.svg" class="danger-icon" alt=""></button>
+        </div>
+      
+        <span class="span-required">Enter a valid email address</span>
+
+      </form>
+    </div>
+
+    <img src="images/hero-desktop.jpg" class="hero-desktop hidden" alt="">
+  </main>
+  <script src="scripts/index.js"></script>
+</body>
+
+</html>
